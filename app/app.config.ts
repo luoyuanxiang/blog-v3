@@ -30,7 +30,7 @@ export default defineAppConfig({
 
 		stats: {
 			/** 归档页面每年标题对应的年龄 */
-			birthYear: 2003,
+			birthYear: 1993,
 			/** blog-stats widget 的预置文本 */
 			wordCount: '约10万',
 		},
@@ -78,9 +78,9 @@ export default defineAppConfig({
 
 	/** 左侧栏顶部 Logo */
 	header: {
-		logo: 'https://cdn.luoyuanxiang.top/dark_logo.png',
+		logo: 'https://cdn.luoyuanxiang.top/avatar.png',
 		/** 展示标题文本，否则展示纯 Logo */
-		showTitle: false,
+		showTitle: true,
 		subtitle: blogConfig.subtitle,
 		emojiTail: ['📄', '🦌', '🙌', '🐟', '🏖️'],
 	},
