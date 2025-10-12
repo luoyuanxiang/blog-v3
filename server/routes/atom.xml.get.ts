@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
 		.limit(blogConfig.feed.limit)
 		.all()
 
-	const entries = posts.map(post => ({
+	const entries = posts.map((post: any) => ({
 		id: getUrl(post.path),
 		title: post.title ?? '',
 		updated: getIsoDatetime(post.updated),

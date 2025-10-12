@@ -8,6 +8,18 @@ export default [
 		// @keep-sorted { "keys": ["date"] }
 		entries: [
 			{
+				author: '纸鹿本鹿',
+				sitenick: '纸鹿本鹿',
+				title: '纸鹿摸鱼处',
+				desc: '纸鹿至麓不知路，支炉制露不止漉',
+				link: 'https://blog.zhilu.site/',
+				feed: 'https://blog.zhilu.site/atom.xml',
+				icon: getFavicon('blog.zhilu.site'),
+				avatar: 'https://www.zhilu.site/api/avatar.png',
+				archs: ['Hexo', 'Netlify'],
+				date: '2024-01-29',
+			},
+			{
 				author: 'GuuGuai',
 				sitenick: '杂记本',
 				title: '古怪杂记本',
