@@ -1,5 +1,6 @@
 import type { Nav, NavItem } from '~/types/nav'
 import blogConfig from '~~/blog.config'
+import { version } from '../package.json'
 
 // 图标查询：https://yesicon.app/ph
 // 图标插件：https://marketplace.visualstudio.com/items?itemName=antfu.iconify
@@ -43,34 +44,34 @@ export default defineAppConfig({
 		/** 侧边栏底部图标导航 */
 		iconNav: [
 			{ icon: 'ph:house-bold', text: '个人主页', url: blogConfig.author.homepage },
-			// { icon: 'ri:qq-line', text: '交流群: 169994096', url: 'https://jq.qq.com/?_wv=1027&k=lQfNSeEd' },
 			{ icon: 'ph:github-logo-bold', text: 'GitHub: luoyuanxiang', url: 'https://github.com/luoyuanxiang' },
 			{ icon: 'ph:rss-simple-bold', text: 'Atom订阅', url: '/atom.xml' },
 			{ icon: 'ph:subway-bold', text: '开往', url: 'https://www.travellings.cn/go-by-clouds.html' },
 		] satisfies NavItem[],
 		/** 页脚站点地图 */
 		nav: [
-			{
-				title: '探索',
-				items: [
-					{ icon: 'ph:rss-simple-bold', text: 'Atom订阅', url: '/atom.xml' },
-					{ icon: 'ph:subway-bold', text: '开往', url: 'https://www.travellings.cn/' },
-				],
-			},
+			// {
+			// 	title: '探索',
+			// 	items: [
+			// 		{ icon: 'ph:rss-simple-bold', text: 'Atom订阅', url: '/atom.xml' },
+			// 		{ icon: 'ph:subway-bold', text: '开往', url: 'https://www.travellings.cn/' },
+			// 		{ icon: 'ph:subway-bold', text: '开往', url: 'https://www.travellings.cn/' },
+			// 	],
+			// },
 			{
 				title: '社交',
 				items: [
 					{ icon: 'ph:github-logo-bold', text: 'luoyuanxiang', url: 'https://github.com/luoyuanxiang' },
-					// { icon: 'ri:qq-line', text: '群: 169994096', url: 'https://jq.qq.com/?_wv=1027&k=lQfNSeEd' },
+					{ icon: 'ri:qq-line', text: 'QQ: 1141306760', url: '' },
 					{ icon: 'ph:envelope-simple-bold', text: blogConfig.author.email, url: `mailto:${blogConfig.author.email}` },
 				],
 			},
 			{
 				title: '信息',
 				items: [
-					// { icon: 'simple-icons:nuxtdotjs', text: `主题: Clarity ${version}`, url: 'https://github.com/L33Z22L11/blog-v3' },
-					{ icon: 'ph:swatches-bold', text: '主题和组件文档', url: '/theme' },
-					{ icon: 'ph:certificate-bold', text: '陕ICP备2025072742号-3', url: 'https://beian.miit.gov.cn/' },
+					{ icon: 'simple-icons:nuxtdotjs', text: `主题: Clarity ${version}`, url: 'https://github.com/L33Z22L11/blog-v3' },
+					{ icon: 'ph:swatches-bold', text: '主题和组件文档', url: 'https://blog.zhilu.site/theme' },
+					{ icon: 'ph:certificate-bold', text: '蜀ICP备2025137681号-1', url: 'https://beian.miit.gov.cn/' },
 				],
 			},
 		] satisfies Nav,
