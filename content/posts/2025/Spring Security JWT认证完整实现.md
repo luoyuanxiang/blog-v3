@@ -10,6 +10,7 @@ categories:
 - 开发笔记
 date: '2025-10-11 20:58:57'
 recommend: true
+image: https://cdn.luoyuanxiang.top/cover/spring_secrity_jwt.webp
 ---
 
 ## 一、自定义匿名用户访问返回处理：`AnonymousAuthenticationEntryPoint`
