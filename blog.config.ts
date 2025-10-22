@@ -11,7 +11,7 @@ const basicConfig = {
 		name: '墨韵云阁',
 		avatar: 'https://cdn.luoyuanxiang.top/avatar.png',
 		email: '1141306760@qq.com',
-		homepage: 'https://blog.luoyuanxiang.top',
+		homepage: 'https://luoyuanxiang.top',
 	},
 	copyright: {
 		abbr: 'CC BY-NC-SA 4.0',
@@ -22,7 +22,7 @@ const basicConfig = {
 	language: 'zh-CN',
 	timeEstablished: '2025-09-04',
 	timezone: 'Asia/Shanghai',
-	url: 'https://blog.luoyuanxiang.top',
+	url: 'https://luoyuanxiang.top',
 	defaultCategory: '未分类',
 }
 
