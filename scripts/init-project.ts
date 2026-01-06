@@ -36,17 +36,17 @@ fs.writeFileSync(`${PATH_NEW_MD}/example.md`, exampleMdContent)
 // 处理 app.config.ts
 const PATH_APP_CONFIG = './app/app.config.ts'
 const appConfigContent = fs.readFileSync(PATH_APP_CONFIG, 'utf8')
-	.replace(/'.*?avatar.com.*?'/, 'blogConfig.author.avatar')
-	.replaceAll('L33Z22L11\'', 'octocat\'')
+	.replace(/'.*?avatar.com.*?'/, 'https://cdn.luoyuanxiang.top/avatar.png')
+	.replaceAll('L33Z22L11\'', 'luoyuanxiang\'')
 	.replace('\'/theme\'', `'https://blog.zhilu.site/theme'`)
-	.replace(/'.?ICP备.*?'/, '\'备案\'')
+	.replace(/'.?ICP备.*?'/, '\'蜀ICP备2025137681号-1\'')
 fs.writeFileSync(PATH_APP_CONFIG, appConfigContent)
 
 // 处理 blog.config.ts
 const PATH_BLOG_CONFIG = './blog.config.ts'
 const blogConfigContent = fs.readFileSync(PATH_BLOG_CONFIG, 'utf8')
-	.replace(/'[^']*纸鹿[^']*'/g, '\'博客\'')
-	.replace(/'[^']*zhilu[^']*'/g, match => match.replace(/zhilu/, 'example'))
+	.replace(/'[^']*纸鹿[^']*'/g, '\'墨韵云阁\'')
+	.replace(/'[^']*zhilu[^']*'/g, match => match.replace(/zhilu/, '墨韵云阁'))
 fs.writeFileSync(PATH_BLOG_CONFIG, blogConfigContent)
 
 // 处理 redirects.json
